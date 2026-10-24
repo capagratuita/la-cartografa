@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Cartógrafa · Mapas de sitio para que Google encuentre tu web</title>
+  <meta name="description" content="Cartógrafa de sitios web: mapas de sitio, rutas para robots y señalización para que Google encuentre tu página. Personaje de ejemplo de Capa Gratuita.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --papel: #F5EFE1;
+      --tinta: #2E2A24;
+      --acento: #2F6B5E;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--papel);
+      color: var(--tinta);
+      font-family: 'Work Sans', sans-serif;
+      font-size: 18px;
+      line-height: 1.65;
+    }
+
+    a { color: var(--acento); }
+
+    .contenedor {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Fraunces', serif;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    h1 { font-size: 60px; max-width: 820px; }
+    h2 { font-size: 48px; margin-bottom: 40px; }
+    h3 { font-size: 26px; margin-bottom: 12px; }
+
+    section { padding: 100px 0; }
+
+    .etiqueta {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--acento);
+      margin-bottom: 24px;
+    }
+
+    /* Hero: una ruta punteada, como en los mapas antiguos */
+    .hero {
+      padding-top: 140px;
+      border-bottom: 2px dashed rgba(46, 42, 36, 0.25);
+    }
+
+    .hero p {
+      font-size: 21px;
+      max-width: 620px;
+      margin: 28px 0 40px;
+    }
+
+    .boton {
+      display: inline-block;
+      background: var(--acento);
+      color: var(--papel);
+      text-decoration: none;
+      font-weight: 600;
+      padding: 16px 32px;
+      border-radius: 4px;
+    }
+
+    .boton:hover { background: var(--tinta); }
+
+    .servicios .tarjetas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .tarjeta {
+      border: 1px solid rgba(46, 42, 36, 0.22);
+      border-radius: 4px;
+      padding: 36px 30px;
+    }
+
+    .tarjeta .marca {
+      display: block;
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      color: var(--acento);
+      margin-bottom: 18px;
+    }
+
+    .testimonios .rejilla {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+    }
+
+    .testimonio {
+      border-left: 3px solid var(--acento);
+      padding: 8px 0 8px 28px;
+    }
+
+    .testimonio blockquote {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      line-height: 1.4;
+      margin-bottom: 16px;
+    }
+
+    .testimonio figcaption { font-size: 16px; }
+    .testimonio figcaption strong { font-weight: 600; }
+
+    .nota {
+      margin-top: 40px;
+      font-size: 15px;
+    }
+
+    .sobre {
+      border-top: 2px dashed rgba(46, 42, 36, 0.25);
+      border-bottom: 2px dashed rgba(46, 42, 36, 0.25);
+    }
+
+    .sobre p { font-size: 20px; max-width: 760px; }
+    .sobre p + p { margin-top: 20px; }
+
+    .contacto p { font-size: 20px; max-width: 640px; margin-bottom: 36px; }
+
+    footer {
+      padding: 40px 0;
+      font-size: 15px;
+      border-top: 1px solid rgba(46, 42, 36, 0.22);
+    }
+
+    @media (max-width: 760px) {
+      .contenedor { padding: 0 22px; }
+      h1 { font-size: 38px; }
+      h2 { font-size: 32px; margin-bottom: 28px; }
+      section { padding: 60px 0; }
+      .hero { padding-top: 80px; }
+      .hero p { font-size: 19px; }
+      .servicios .tarjetas { grid-template-columns: 1fr; gap: 20px; }
+      .testimonios .rejilla { grid-template-columns: 1fr; gap: 32px; }
+      .testimonio blockquote { font-size: 20px; }
+      .sobre p, .contacto p { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="contenedor">
+      <span class="etiqueta">Cartógrafa de sitios web</span>
+      <h1>Dibujo el mapa de tu web para que Google la encuentre.</h1>
+      <p>Mapas de sitio, rutas claras y buenas señales para que los buscadores lleguen a cada rincón de tu página, aunque no tengas dominio propio. Sin trucos: con orden.</p>
+      <a class="boton" href="https://t.me/capagratuita_admin">Escríbeme por Telegram</a>
+    </div>
+  </section>
+
+  <section class="servicios" id="servicios">
+    <div class="contenedor">
+      <h2>Servicios</h2>
+      <div class="tarjetas">
+        <article class="tarjeta">
+          <span class="marca">I</span>
+          <h3>Mapas de sitio</h3>
+          <p>Trazo un sitemap.xml con cada página de tu web. Es la lista que Google consulta para llegar a todas sin tener que adivinar.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="marca">II</span>
+          <h3>Rutas para robots</h3>
+          <p>Dejo señales claras para que los buscadores sepan por dónde entrar y qué recorrer. Si el camino está claro, ninguna página queda escondida.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="marca">III</span>
+          <h3>Señalización</h3>
+          <p>Escribo títulos y descripciones que dicen, en cada lugar, qué va a encontrar quien llega. Son lo primero que se ve en los resultados de búsqueda.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="marca">IV</span>
+          <h3>Registro en Search Console</h3>
+          <p>Presento tu página a Google en su propia herramienta, gratis. Sirve una dirección de GitHub Pages: no hace falta dominio propio.</p>
+        </article>
+        <article class="tarjeta">
+          <span class="marca">V</span>
+          <h3>Revisión de rutas</h3>
+          <p>Compruebo que tu página aparece en Google y qué búsquedas te traen visitas. Sin promesas de plazo: eso lo decide Google.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonios" id="testimonios">
+    <div class="contenedor">
+      <h2>Lo que dicen mis vecinos de ficción</h2>
+      <div class="rejilla">
+        <figure class="testimonio">
+          <blockquote>«Deduje en tres minutos por qué Google no encontraba mi página: le faltaba un mapa. Mi vecina lo dibujó. Elemental.»</blockquote>
+          <figcaption><strong><a href="https://capagratuita.github.io/landing-sherlock-holmes/">Sherlock Holmes</a></strong>, detective consultor</figcaption>
+        </figure>
+        <figure class="testimonio">
+          <blockquote>«Dejamos migas de pan por todo el sitio y se las comieron los pájaros. Ella nos enseñó a dejar migas que Google sí sigue.»</blockquote>
+          <figcaption><strong>Hansel y Gretel</strong>, exploradores del bosque</figcaption>
+        </figure>
+        <figure class="testimonio">
+          <blockquote>«Tardé diez años en volver a casa. Ojalá alguien me hubiera dibujado el mapa antes de zarpar.»</blockquote>
+          <figcaption><strong>Ulises</strong>, navegante</figcaption>
+        </figure>
+        <figure class="testimonio">
+          <blockquote>«En mi mundo, cada camino llevaba a otro sitio. En mi página, ahora cada enlace lleva a donde dice.»</blockquote>
+          <figcaption><strong>Alicia</strong>, visitante de un país muy raro</figcaption>
+        </figure>
+      </div>
+      <p class="nota">Testimonios de personajes de ficción, como yo. Nadie cobró por ellos (ni podría).</p>
+    </div>
+  </section>
+
+  <section class="sobre" id="sobre-mi">
+    <div class="contenedor">
+      <h2>Sobre mí</h2>
+      <p>Soy La Cartógrafa, un personaje de ejemplo de Capa Gratuita, y la vecina de <a href="https://capagratuita.github.io/landing-sherlock-holmes/">Holmes</a> en este mismo GitHub: él deduce, yo trazo mapas.</p>
+      <p>Mi oficio es antiguo: que nadie se pierda por el camino. En la web, quien necesita el mapa es Google, y se lo dibujo con un archivo sencillo, gratis y sin tocar el diseño.</p>
+      <p>Esta página se hizo con la guía gratuita <a href="https://capagratuita.com/guias/landing-page-gratis/">Crea y publica tu página web gratis sin tocar código</a>. Nada de esto es magia: es orden y paciencia.</p>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <div class="contenedor">
+      <h2>Contacto</h2>
+      <p>¿Quieres que tu página aparezca en el mapa? Escríbeme por Telegram. Atiende el equipo de Capa Gratuita.</p>
+      <a class="boton" href="https://t.me/capagratuita_admin">@capagratuita_admin</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contenedor">
+      © La Cartógrafa · Personaje de ejemplo de Capa Gratuita
+    </div>
+  </footer>
+
+</body>
+</html>
